@@ -1,0 +1,62 @@
+.Contact{
+    margin-bottom: 50px;
+}
+.Contact h1{
+    text-align: center;
+}
+.Contact .conContact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.Contact .left-contact .par{
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.Contact .left-contact .contact-list{
+    margin-bottom: 20px;
+}
+.Contact .left-contact .contact-list p{
+    padding-top: 8px;
+    font-size: 18px;
+}
+.Contact .right-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.Contact input , .Contact textarea{
+    color: var(--first-color);
+    background: var(--transparent-color-02);
+    font-size: var(--normal-font-size);
+    margin-bottom: 20px;
+    padding: 15px 0 40px 15px;
+    border-radius: 10px;
+    outline: auto;
+}
+.Contact textarea{
+    padding: 15px 0 120px 15px;
+}
+.Contact .conName {
+    display: flex;
+}
+.Contact .conName .FirstName{
+    margin-right: 20px;
+}
+.Contact button{
+    width: 100%;
+    height: 65px;
+}
+
+@media (max-width:992px) {
+.Contact .conContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Contact .right-contact ,.Contact .conName .FirstName, .Contact .conName .LastName{
+    width: 100%;
+}
+}    

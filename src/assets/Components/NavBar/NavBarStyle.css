@@ -1,0 +1,87 @@
+.nav{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    transition: .6s ease;
+    height: calc(4rem + 1rem); 
+    margin-left: auto;
+    margin-right: auto; 
+}
+.nav .conlogo img{
+    width: 200px;
+    height: 80px;
+}
+.nav.sticky{
+    background-color: var(--bg-color);
+}
+.nav-items{
+    max-width: 480px;
+    gap: 35px;
+    
+}
+.nav-items a{
+    font-size: 17px;
+    color: var(--tx-color);
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-items a:hover , .nav-mobile-items a:hover{
+    background-color: #da62d8;
+    border-radius: 4px;
+    padding: 10px;
+}
+.theme-icon{
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+.container .navItemMode{
+    max-width: 580px;
+    gap: 70px;
+    
+}
+.nav-mobile{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 246px;
+    background-color: var(--bg-color);
+    height: calc(100vh - 36px);
+    padding-top: 105px;
+    z-index: 999;
+}
+.nav-mobile .conMode{
+    padding: 17px 20px 0 20px;
+}
+.nav-mobile-items{
+    gap: 50px;
+    padding: 0 0 50px 20px;
+    border-bottom: 1px solid #937DC2;
+    width: 100%;
+}
+.nav-mobile-items a{
+    color: var(--text-color);
+}
+.close-icon{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+nav.sticky .nav-items a{
+    color: #fff;
+    background-color: #fff;
+}
+
+@media (max-width:992px) {
+    .nav-items , nav .container .conMode {
+        display: none;
+    }
+    nav .container .conMode{
+        border-top: 3px solid #937DC2;
+    }
+    .menu-icon{
+    display: block;
+    }
+}

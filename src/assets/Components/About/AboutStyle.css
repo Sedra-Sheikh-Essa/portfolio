@@ -1,0 +1,33 @@
+.About{
+    width: calc(100vw - 21.96vw);
+    gap: 136px;
+    border-radius: 25px;
+    opacity: 0px;
+    background-color: var(--bg-color);
+    margin: auto;
+    padding: 50px 20px;
+}
+.About h1{
+    text-align: center;
+}
+.About .conAbout{
+    text-align: center;
+}
+.About .conAbout .detail p{
+    font-size: 20px;
+}
+.About .conAbout button{
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: #da62d8;
+    margin-top: 30px;
+}
+
+@media (max-width:600px) {
+    .About .conAbout .conImg .imgAbout{
+        width: 100%;
+        height: 370px;
+    }
+}

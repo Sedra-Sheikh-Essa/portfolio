@@ -1,0 +1,51 @@
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.project{
+    margin: 50px 0;
+}
+.project h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.Card{
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--bg-card);
+
+}
+.Card img{
+  width: 100%;
+  height: 40%;
+  border-radius: 15px;
+}
+.Card h3 ,.Card .skills{
+  padding: 20px 0;
+}
+.Card .skills span{
+  font-weight: bold;
+}
+.Card .conbtn{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width:425px) {
+  .Card .conbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

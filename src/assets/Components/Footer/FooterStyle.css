@@ -1,0 +1,33 @@
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #da62d8;
+    height: 15vh;
+}
+.Footer .social{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+}
+.Footer .social li a{
+    transition: .4s;
+}
+.Footer .social li .face{
+    transition: 0.4s;
+    transition: 0.3s all ease-in;
+}
+
+@media (max-width:710px) {
+    .Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    }
+
+    .Footer .social{
+        width: 80%;
+    }
+}
